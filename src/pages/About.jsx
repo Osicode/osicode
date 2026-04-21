@@ -27,7 +27,7 @@ const About = () => {
                   borderRadius: '30px', zIndex: -1, opacity: 0.5, filter: 'blur(20px)'
                 }}></div>
                 <img 
-                  src="/assets/about.png" 
+                  src={`${import.meta.env.BASE_URL}assets/about.png`} 
                   alt="Thomas Etiuzale Osholene" 
                   style={{ width: '100%', maxWidth: '400px', borderRadius: '24px', border: '2px solid rgba(255,255,255,0.1)' }}
                   onError={(e) => {

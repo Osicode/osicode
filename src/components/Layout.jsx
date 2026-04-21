@@ -57,7 +57,7 @@ const Layout = ({ children }) => {
       <nav className={`navbar ${scrolled ? 'scrolled' : ''}`}>
         <div className="container nav-container">
           <NavLink to="/" className="nav-logo" onClick={closeMenu}>
-            <img src="/assets/logo_happy.png" alt="OsiCode Logo" />
+            <img src={`${import.meta.env.BASE_URL}assets/logo_happy.png`} alt="OsiCode Logo" />
             <span className="text-gradient">OsiCode</span>
           </NavLink>
           
@@ -115,7 +115,7 @@ const Layout = ({ children }) => {
               </div>
               <div style={{ display: 'flex', flexDirection: 'column', gap: '0.5rem' }}>
                 <strong style={{ color: 'white' }}>Legal & Support</strong>
-                <a href="/assets/packabunch Privacy Policy.pdf" target="_blank" rel="noreferrer" className="footer-link">Privacy Policy</a>
+                <a href={`${import.meta.env.BASE_URL}assets/packabunch Privacy Policy.pdf`} target="_blank" rel="noreferrer" className="footer-link">Privacy Policy</a>
                 <button onClick={(e) => openModal('terms', e)} className="footer-link">Terms & Conditions</button>
                 <button onClick={(e) => openModal('support', e)} className="footer-link">Support</button>
                 <button onClick={(e) => openModal('license', e)} className="footer-link">Open Source Licenses</button>

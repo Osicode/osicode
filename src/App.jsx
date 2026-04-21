@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { BrowserRouter as Router, Routes, Route, useLocation } from 'react-router-dom';
+import { HashRouter as Router, Routes, Route, useLocation } from 'react-router-dom';
 import { AnimatePresence, motion } from 'framer-motion';
 
 import Layout from './components/Layout';
@@ -67,7 +67,7 @@ const LoadingScreen = ({ onComplete }) => {
         transition={{ repeat: Infinity, duration: 2 }}
         style={{ marginBottom: '2rem' }}
       >
-        <img src="/assets/icon.png" alt="OsiCode Loading" style={{ width: '100px', filter: 'drop-shadow(0 0 20px var(--accent-cyan))' }} />
+        <img src={`${import.meta.env.BASE_URL}assets/icon.png`} alt="OsiCode Loading" style={{ width: '100px', filter: 'drop-shadow(0 0 20px var(--accent-cyan))' }} />
       </motion.div>
       
       <motion.div

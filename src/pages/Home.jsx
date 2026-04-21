@@ -55,7 +55,7 @@ const Home = () => {
                 filter: 'blur(100px)', opacity: 0.2, borderRadius: '50%', zIndex: -1
               }}></div>
               <img 
-                src="/assets/icon.png" 
+                src={`${import.meta.env.BASE_URL}assets/icon.png`} 
                 alt="Packabunch Game Icon" 
                 style={{ width: '100%', maxWidth: '350px', filter: 'drop-shadow(0 20px 40px rgba(0,0,0,0.5))' }} 
               />

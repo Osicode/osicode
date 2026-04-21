@@ -19,7 +19,7 @@ const Download = () => {
             style={{ marginBottom: '3rem' }}
           >
             <img 
-              src="/assets/logo_happy.png" 
+              src={`${import.meta.env.BASE_URL}assets/logo_happy.png`} 
               alt="Packabunch" 
               style={{ width: '150px', filter: 'drop-shadow(0 0 20px rgba(0,240,255,0.5))' }}
             />
